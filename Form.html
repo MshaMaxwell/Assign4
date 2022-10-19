@@ -1,0 +1,62 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="Assignment4.css">
+        <title>
+            Forms Assign4
+        </title>
+        <script src="Validation.js"></script>
+    </head>
+<body>
+    <form onsubmit="event.preventDefault();" name="sample" method="POST" style="font-family: 'Times New Roman', Times, serif;">
+        <fieldset>
+            <br><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" size="30"></input>
+            <br><br>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" size="30"></input>
+            <br><br>
+            <label for="PNumber" size="15">Phone Number:</label>
+            <input type="text" id="PNumber" size="30"></input>
+            <br><br>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" size="30"></input>
+            <input type="hidden" name="hidden" value="cs">
+            <br><br>
+            <label for="CPassword" size="30" class="BigText">Change Password:</label>
+            <input type="password" id="CPassword" size="30"></input>
+            <input type="hidden" name="hidden" value="cs">
+            <br><br>
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="Gender" value="Gender1" id="Gender1">Female
+            <input type="radio" name="Gender" value="Gender2" id="Gender2">Male
+            <input type="radio" name="Gender" value="Gender0" id="Gender0">Other
+            <br><br>
+            <label for="Age-Group">Age Group:</label>
+            <select name="Age-Group" id="Age-Group">
+                <option value="young"></option>
+                <option value="21plus"> &#60; 21 years old</option>
+                <option value="21to25">21 - 25 years old</option>
+                <option value="26to35">26 - 35 years old</option>
+                <option value="36to50">36 - 50 years old</option>
+                <option value="50plus"> &#60; 50 years old</option>
+            </select>
+            <br><br>
+            <label for="FMGenre" class="BigText">Favorite Music Genre:</label>
+            <input type="checkbox" id="music1" name="pop" value="pop">Pop
+            <input type="checkbox" id="music2" name="hiphop" value="hiphop">Hiphop 
+            <input type="checkbox" id="music3" name="jazz" value="jazz">Jazz
+            <input type="checkbox" id="music4" name="rock" value="rock">Rock
+            <input type="checkbox" id="music5" name="classic" value="classic">Classical Music
+            <input type="checkbox" id="music6" name="country" value="country">Country
+            <br><br>
+            <button type="submit" onclick="valUser1(); valPass(); valPNum(); valConfirm(); test();">Submit</button>
+            <button type="reset">Clear</button>
+            <br><br>
+            <div id="output" style="font-size: medium;"></div>
+        </fieldset>
+    </form>
+<h1></h1>
+</body>
+</html>
